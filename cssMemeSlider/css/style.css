@@ -9,7 +9,12 @@ html {
   width: 800px;
   margin: 0 auto;
 }
-
+@media (max-width: 1023px) {
+  .container {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
 .slider-container {
   position: relative;
   width: 100%;
@@ -38,6 +43,17 @@ html {
   height: 480px;
   object-fit: cover;
 }
+@media (max-width: 1023px) {
+  .slider-container__slide img {
+    height: 300px;
+  }
+}
+@media (max-width: 1023px) {
+  .slider-container__text {
+    margin-top: 40px;
+    font-size: 13px;
+  }
+}
 
 .slider-container__pagination {
   position: absolute;
@@ -46,7 +62,13 @@ html {
   transform: translateX(-50%);
   display: flex;
 }
-
+@media (max-width: 1023px) {
+  .slider-container__pagination {
+    bottom: 55px;
+    right: auto;
+    left: 50%;
+  }
+}
 .slider-container__pagination label {
   cursor: pointer;
   padding: 5px;
